@@ -1,14 +1,15 @@
 # ACES
-Code related to ACES (ASPLOS 2024)
+Code related to ACES (ASPLOS 2024).
+**Please note that:** The simulator we have implemented is **cycle accurate** and comes with MSHR cache (with fixed cache row size and accurate memory package for every element). Therefore, the operating cycle is generally longer than event driven simulators.
 
 # Build
 Run the following code to build ACES
 
-`git clone git@github.com:Boyu-Long/ACES.git
-`mkdir build
-`cd build
-`cmake ..
-`make
+    git clone git@github.com:Boyu-Long/ACES.git
+    mkdir build
+    cd build
+    cmake ..
+    make
 
 a executable file named **aces** will be generated in the same directory.
 
