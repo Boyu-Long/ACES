@@ -1,6 +1,8 @@
 # ACES
-Code related to ACES (ASPLOS 2024).
-**Please note that:** The simulator we have implemented is **cycle accurate** and comes with MSHR cache (with fixed cache row size and accurate memory package for every element). Therefore, the operating cycle is generally longer than event driven simulators.
+
+This repository implements the proposed spatial accelerator design in the paper [**ACES: Accelerating Sparse Matrix Multiplication with Adaptive Execution Flow and Concurrency-Aware Cache Optimizations (ASPLOS 2024)**](https://dl.acm.org/doi/10.1145/3620666.3651381).
+
+**Please note that:** The simulator we have implemented is **cycle accurate** and comes with MSHR cache (with fixed cache row size and accurate memory package for every element). Therefore, the operation time is generally longer than that of event-driven simulators.
 
 # Build
 Run the following code to build ACES
@@ -30,3 +32,16 @@ Aces accepts the following parameters:
     4. -1 for automatic sampling and selecting the optimal condense type based on performance
 
 The results will be saved in "matrix file path"/"matrix name"_ACES_performance.txt
+
+
+Please cite our paper if you find SALO useful for your research:
+```
+@inproceedings{lu2024aces,
+  title={ACES: Accelerating Sparse Matrix Multiplication with Adaptive Execution Flow and Concurrency-Aware Cache Optimizations},
+  author={Lu, Xiaoyang and Long, Boyu and Chen, Xiaoming and Han, Yinhe and Sun, Xian-He},
+  booktitle={Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 3},
+  pages={71--85},
+  year={2024}
+}
+```
+
