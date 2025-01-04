@@ -34,7 +34,7 @@ Aces accepts the following parameters:
 The results will be saved in "matrix file path"/"matrix name"_ACES_performance.txt
 
 
-Please cite our paper if you find SALO useful for your research:
+Please cite our paper if you find ACES useful for your research:
 ```
 @inproceedings{lu2024aces,
   title={ACES: Accelerating Sparse Matrix Multiplication with Adaptive Execution Flow and Concurrency-Aware Cache Optimizations},
