@@ -144,6 +144,10 @@ void simulator::read_file(string file_name, int &h, int &w, double &s, vector<ve
 
     ifstream fin;
     fin.open(file_name);
+    if(!fin.is_open()){
+        cout<<"Read file failed due to fin open failed "<<file_name<<endl;
+        assert(false);
+    }
     fin>>h>>w>>n;
     s = (double)n/((double)h*(double)w);
     fin>>p.r>>p.c>>p.v;
@@ -166,7 +170,8 @@ void simulator::read_file(string file_name, int &h, int &w, double &s, vector<ve
 void simulator::read_mat(string file_path, string mat_name){
     int h, w;
     double s;
-    string test_sample_path = file_path + "/" + mat_name + "/";
+    // string test_sample_path = file_path + "/" + mat_name + "/";
+    string test_sample_path = file_path + "/";
     string test_sample_file_name = mat_name + "_r.txt";
     read_file(test_sample_path + test_sample_file_name, this->matrix_h, this->matrix_w, this->matrix_sparse, mat_a_read);
     if(this->matrix_h == this->matrix_w)
