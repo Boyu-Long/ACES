@@ -8,6 +8,7 @@ This repository implements the proposed spatial accelerator design in the paper 
 Run the following code to build ACES
 
     git clone git@github.com:Boyu-Long/ACES.git
+    cd /path/to/ACES
     mkdir build
     cd build
     cmake ..
