@@ -1,3 +1,4 @@
 build/
 aces
 mat/test_mat
+**/__pycache__/
